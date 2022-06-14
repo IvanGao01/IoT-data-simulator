@@ -1,5 +1,18 @@
 version: '3'
 services:
+  emqx:
+    container_name: iot-ds-emqx
+    image: emqx/emqx:4.4.4
+    ports:
+      - 1883:1883
+      - 18083:18083
+  cnosdb:
+    container_name: iot-ds-cnosdb
+    image: cnosdb/cnosdb:latest
+    environment:
+      - CNOSDB_HOSTNAME=iot-ds-cnosdb
+    ports:
+      - 8086:8086
   mongodb:
     image: mongo:3.5
     container_name: iot-ds-mongodb

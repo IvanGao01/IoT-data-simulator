@@ -1,5 +1,10 @@
 version: '3'
 services:
+  grafana:
+    container_name: iot-ds-grafana
+    image: grafana/grafana:9.0.0
+    ports:
+      - 3000:3000
   emqx:
     container_name: iot-ds-emqx
     image: emqx/emqx:4.4.4

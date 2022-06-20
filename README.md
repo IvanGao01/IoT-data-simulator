@@ -8,7 +8,7 @@ docker-compose pull
 docker-compose up
 ```
 
-2. 使用 打开http://localhost:8090，配置数据集，可以参考[IoT-data-simulator](https://github.com/IBA-Group-IT/IoT-data-simulator)
+2. 使用浏览器打开 `http://localhost:8090`，配置数据集，可以参考：[IoT-data-simulator](https://github.com/IBA-Group-IT/IoT-data-simulator)
 
 3. 下载和安装[telegraf](https://portal.influxdata.com/downloads/)
 
